@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-26T16:41:24 EEST" name="Default Suite" finished-at="2024-09-26T16:41:32 EEST" duration-ms="7456">
+    <groups>
+    </groups>
+    <test started-at="2024-09-26T16:41:24 EEST" name="APIUsingRestassured" finished-at="2024-09-26T16:41:32 EEST" duration-ms="7456">
+      <class name="com.Swagger.APITesting.users.UsersTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Swagger.APITesting.users.UsersTest@4df50bcc]" started-at="2024-09-26T16:41:24 EEST" name="setup" finished-at="2024-09-26T16:41:24 EEST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testPostUser()[pri:1, instance:com.Swagger.APITesting.users.UsersTest@4df50bcc]" started-at="2024-09-26T16:41:24 EEST" name="testPostUser" finished-at="2024-09-26T16:41:30 EEST" duration-ms="5554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="getUserWithQueryParam()[pri:2, instance:com.Swagger.APITesting.users.UsersTest@4df50bcc]" started-at="2024-09-26T16:41:30 EEST" name="getUserWithQueryParam" finished-at="2024-09-26T16:41:30 EEST" duration-ms="434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserWithQueryParam -->
+        <test-method signature="testPUTtUser()[pri:3, instance:com.Swagger.APITesting.users.UsersTest@4df50bcc]" started-at="2024-09-26T16:41:30 EEST" name="testPUTtUser" finished-at="2024-09-26T16:41:31 EEST" duration-ms="390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPUTtUser -->
+        <test-method signature="testGetUsers()[pri:4, instance:com.Swagger.APITesting.users.UsersTest@4df50bcc]" started-at="2024-09-26T16:41:31 EEST" name="testGetUsers" finished-at="2024-09-26T16:41:31 EEST" duration-ms="350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUsers -->
+        <test-method signature="testDeleteActivity()[pri:5, instance:com.Swagger.APITesting.users.UsersTest@4df50bcc]" started-at="2024-09-26T16:41:31 EEST" name="testDeleteActivity" finished-at="2024-09-26T16:41:32 EEST" duration-ms="597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteActivity -->
+      </class> <!-- com.Swagger.APITesting.users.UsersTest -->
+    </test> <!-- APIUsingRestassured -->
+  </suite> <!-- Default Suite -->
+</testng-results>

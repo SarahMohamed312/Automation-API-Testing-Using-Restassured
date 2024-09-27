@@ -1,0 +1,68 @@
+package com.Swagger.APITesting.books;
+
+import com.Swagger.APITesting.Books;
+import com.Swagger.APITesting.BooksPage;
+import io.restassured.response.Response;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class BooksTest {
+    private Books books;
+    private BooksPage booksPage;
+
+    @BeforeClass
+    public void setup() {
+        booksPage = new BooksPage();
+        books = new Books(10, "Book 10",
+                "Iriure hendrerit amet no sanctus eos vero ut sit sit amet sed ut. Sanctus et accumsan rebum euismod vero tincidunt eu vero tation et id. Nonumy facilisis sed iusto tempor dolor rebum et sed et sea eleifend consetetur vulputate erat diam. Mazim voluptua clita sanctus. Et ipsum kasd in est justo rebum ea sadipscing tempor. Tempor consequat elitr sanctus dolore in velit et aliquyam sadipscing labore duo et magna tempor sit. Elit ea sit autem stet ullamcorper eirmod odio eum sit dolor sit duis enim. Labore est sed luptatum tempor erat nonumy et tempor vero nibh aliquyam at et kasd gubergren duo iriure blandit. Diam sed vel vero clita lorem et sed amet vero at. Feugait diam clita sed sed est voluptua ipsum et lorem no sanctus sanctus lorem vel amet. Tempor erat iusto no ea sit. Et et velit et rebum diam accusam feugiat ut justo facilisis ea sea et duo diam. Dignissim sed facilisis dolore tempor amet in takimata luptatum sanctus no ipsum magna diam consetetur.\n",
+                1000,
+                "Sanctus takimata duis in ut rebum. Option erat et et luptatum euismod et duo wisi accusam diam tempor sit ea delenit wisi. No ea lorem stet aliquyam. Sit lorem ut. Sed clita et ut illum rebum ipsum aliquip vulputate ex amet no tempor autem diam et. Tempor takimata autem illum gubergren kasd amet dolor assum ea lorem aliquam ipsum invidunt est vel. Eirmod takimata vel et nonumy eos ea sed vero kasd delenit sit. Et eos dolor sit tincidunt sit lobortis eros lorem blandit. Et magna ipsum stet magna sit erat sed voluptua justo lobortis gubergren justo lorem ipsum. Autem dolor esse eleifend invidunt sit gubergren vero at eos. Nulla no sed no. Vero et at at vero duis luptatum vero clita invidunt at gubergren rebum tincidunt duis. Amet dolore odio dolore dolor justo magna est accusam et sit eros dolor. Assum ipsum feugait et kasd ipsum et suscipit nulla accusam invidunt clita eirmod labore et lorem stet sit. Nobis feugiat voluptua sed et ut eirmod duo. Lorem ipsum feugiat at voluptua stet kasd. Erat kasd ad nulla eleifend et eos dolor hendrerit lobortis aliquyam dolor nihil voluptua elitr amet ea rebum feugiat. Hendrerit diam lorem takimata dolores magna aliquip et eos clita. Sit duo amet amet magna sanctus labore sit gubergren ipsum lorem zzril doming.\nDiam eu elit. No nulla elitr sit ea. Ut iusto sadipscing magna dolor lorem clita diam est erat aliquyam erat est iusto exerci feugiat stet. No invidunt laoreet eros justo stet ipsum eirmod takimata molestie ipsum sanctus no lorem aliquyam stet dolor elit elitr. Vero amet at sanctus invidunt diam sed erat voluptua eos dolor. Dolores vero rebum et et minim et stet ad vel at eum. Ea et rebum amet cum eum vero dolore rebum consetetur takimata facilisis. Dolore sed accusam eos stet esse invidunt quis accumsan et invidunt eu lorem zzril. Sanctus dolore sit est invidunt magna at et sed nihil elitr ipsum ut consequat. Minim lorem takimata justo stet adipiscing gubergren nulla vel sanctus justo rebum vero magna sed blandit. Sed duis sit dolore dolore lorem accusam. Veniam duo consetetur consetetur ipsum tempor sit velit et molestie dolore at.\nEa dolor at iriure consetetur dolores dolores amet eirmod eirmod erat iusto et diam no accusam. Amet velit minim dolor rebum et. Amet sed sit at dolore dolore sit in eirmod exerci nonummy vel sea est. Et lobortis te erat clita ea dolores. Accumsan lorem sit lorem et tation amet labore. Invidunt at zzril lorem dolor in ipsum aliquyam vulputate est dolore no rebum. Rebum minim eos rebum clita.\nEst dolores erat vero ut no est erat stet invidunt. Sanctus amet facilisi dolore. Facilisi tempor eros clita nulla mazim kasd ut elitr erat. Ipsum gubergren sed sadipscing eirmod vero ut dolore sea invidunt. Sea et consetetur sed vero ut te ut et et. Accusam eu sea justo. Voluptua dolore takimata amet adipiscing eos consetetur duo sit ea eros sit lorem nostrud laoreet vero aliquip sadipscing. Hendrerit justo eos. At takimata consetetur no sadipscing lorem eirmod eum et vulputate no no et sit feugait dolores id accumsan. Facilisi accusam iriure feugait clita sed illum in dolore et eos tincidunt sit nostrud clita dolore assum eirmod et. Dolor eirmod takimata at consectetuer amet duis diam eos amet diam ipsum justo elitr et erat sit lorem et. In iriure dolor eos ut no. Dolore sea ipsum. Erat odio accumsan erat ut rebum rebum kasd et erat erat dolore sed duis sed ullamcorper lorem dolor dolore. In est sadipscing voluptua tempor dolore labore no esse dolore dolores.\nVero dolore magna sed stet. Ut lorem tempor amet sit ipsum vero consetetur id sanctus ut no. Diam lorem eleifend vero eu et elitr diam aliquyam sanctus sanctus sit dolore magna enim. Lorem ipsum ea et esse sit kasd soluta eirmod elitr sed stet tempor sea dolor esse. Lorem et amet iriure takimata et kasd accusam no consectetuer illum ea amet hendrerit. At iriure et sea lorem soluta erat quis elitr dolor tempor eirmod nonumy erat suscipit diam tempor duo exerci. Voluptua blandit et sed duis ipsum nisl voluptua ipsum ea lorem eirmod molestie kasd. In erat consetetur lorem est no facilisis elitr. Dolor et facilisi sed sit et erat nonummy eos clita sed. Invidunt hendrerit dolor justo lorem. Nostrud clita sadipscing dolores aliquip consetetur. Dolore sanctus sadipscing duo et duo wisi gubergren lorem eirmod augue duis dolore ut lorem. Sed magna feugait et rebum est suscipit dolor ea lorem liber et aliquyam nobis volutpat. Nihil wisi duo justo ut at dolores consetetur amet. Ut ex nobis lobortis ullamcorper ad voluptua sea dolore ut elitr. Nulla sed molestie. In dolores magna congue dolore diam dolore rebum lorem sadipscing nonumy erat ea.\n",
+                "2024-09-15T20:09:13.3958006+00:00");
+       }
+
+       @Test(priority = 1)
+            public void testPostBooks(){
+            Response response= booksPage.postBook(books);
+           Assert.assertEquals(response.getStatusCode(), 200, "Expected status code is 200");
+           System.out.println("POST Response: " + response.asString());
+        }
+
+@Test(priority=2)
+    public void testGetBooks(){
+        Response response=booksPage.getBook(10);
+    Assert.assertEquals(response.getStatusCode(), 200, "Expected status code is 200");
+    System.out.println("POST Response: " + response.asString());
+
+}
+
+@Test(priority=3)
+     public void testPutBook(){
+       Books updateBooks= new Books(20, "Book 20",
+               "Iriure hendrerit amet no sanctus eos vero ut sit sit amet sed ut. Sanctus et accumsan rebum euismod vero tincidunt eu vero tation et id. Nonumy facilisis sed iusto tempor dolor rebum et sed et sea eleifend consetetur vulputate erat diam. Mazim voluptua clita sanctus. Et ipsum kasd in est justo rebum ea sadipscing tempor. Tempor consequat elitr sanctus dolore in velit et aliquyam sadipscing labore duo et magna tempor sit. Elit ea sit autem stet ullamcorper eirmod odio eum sit dolor sit duis enim. Labore est sed luptatum tempor erat nonumy et tempor vero nibh aliquyam at et kasd gubergren duo iriure blandit. Diam sed vel vero clita lorem et sed amet vero at. Feugait diam clita sed sed est voluptua ipsum et lorem no sanctus sanctus lorem vel amet. Tempor erat iusto no ea sit. Et et velit et rebum diam accusam feugiat ut justo facilisis ea sea et duo diam. Dignissim sed facilisis dolore tempor amet in takimata luptatum sanctus no ipsum magna diam consetetur.\n",
+               1000,
+               "Sanctus takimata duis in ut rebum. Option erat et et luptatum euismod et duo wisi accusam diam tempor sit ea delenit wisi. No ea lorem stet aliquyam. Sit lorem ut. Sed clita et ut illum rebum ipsum aliquip vulputate ex amet no tempor autem diam et. Tempor takimata autem illum gubergren kasd amet dolor assum ea lorem aliquam ipsum invidunt est vel. Eirmod takimata vel et nonumy eos ea sed vero kasd delenit sit. Et eos dolor sit tincidunt sit lobortis eros lorem blandit. Et magna ipsum stet magna sit erat sed voluptua justo lobortis gubergren justo lorem ipsum. Autem dolor esse eleifend invidunt sit gubergren vero at eos. Nulla no sed no. Vero et at at vero duis luptatum vero clita invidunt at gubergren rebum tincidunt duis. Amet dolore odio dolore dolor justo magna est accusam et sit eros dolor. Assum ipsum feugait et kasd ipsum et suscipit nulla accusam invidunt clita eirmod labore et lorem stet sit. Nobis feugiat voluptua sed et ut eirmod duo. Lorem ipsum feugiat at voluptua stet kasd. Erat kasd ad nulla eleifend et eos dolor hendrerit lobortis aliquyam dolor nihil voluptua elitr amet ea rebum feugiat. Hendrerit diam lorem takimata dolores magna aliquip et eos clita. Sit duo amet amet magna sanctus labore sit gubergren ipsum lorem zzril doming.\nDiam eu elit. No nulla elitr sit ea. Ut iusto sadipscing magna dolor lorem clita diam est erat aliquyam erat est iusto exerci feugiat stet. No invidunt laoreet eros justo stet ipsum eirmod takimata molestie ipsum sanctus no lorem aliquyam stet dolor elit elitr. Vero amet at sanctus invidunt diam sed erat voluptua eos dolor. Dolores vero rebum et et minim et stet ad vel at eum. Ea et rebum amet cum eum vero dolore rebum consetetur takimata facilisis. Dolore sed accusam eos stet esse invidunt quis accumsan et invidunt eu lorem zzril. Sanctus dolore sit est invidunt magna at et sed nihil elitr ipsum ut consequat. Minim lorem takimata justo stet adipiscing gubergren nulla vel sanctus justo rebum vero magna sed blandit. Sed duis sit dolore dolore lorem accusam. Veniam duo consetetur consetetur ipsum tempor sit velit et molestie dolore at.\nEa dolor at iriure consetetur dolores dolores amet eirmod eirmod erat iusto et diam no accusam. Amet velit minim dolor rebum et. Amet sed sit at dolore dolore sit in eirmod exerci nonummy vel sea est. Et lobortis te erat clita ea dolores. Accumsan lorem sit lorem et tation amet labore. Invidunt at zzril lorem dolor in ipsum aliquyam vulputate est dolore no rebum. Rebum minim eos rebum clita.\nEst dolores erat vero ut no est erat stet invidunt. Sanctus amet facilisi dolore. Facilisi tempor eros clita nulla mazim kasd ut elitr erat. Ipsum gubergren sed sadipscing eirmod vero ut dolore sea invidunt. Sea et consetetur sed vero ut te ut et et. Accusam eu sea justo. Voluptua dolore takimata amet adipiscing eos consetetur duo sit ea eros sit lorem nostrud laoreet vero aliquip sadipscing. Hendrerit justo eos. At takimata consetetur no sadipscing lorem eirmod eum et vulputate no no et sit feugait dolores id accumsan. Facilisi accusam iriure feugait clita sed illum in dolore et eos tincidunt sit nostrud clita dolore assum eirmod et. Dolor eirmod takimata at consectetuer amet duis diam eos amet diam ipsum justo elitr et erat sit lorem et. In iriure dolor eos ut no. Dolore sea ipsum. Erat odio accumsan erat ut rebum rebum kasd et erat erat dolore sed duis sed ullamcorper lorem dolor dolore. In est sadipscing voluptua tempor dolore labore no esse dolore dolores.\nVero dolore magna sed stet. Ut lorem tempor amet sit ipsum vero consetetur id sanctus ut no. Diam lorem eleifend vero eu et elitr diam aliquyam sanctus sanctus sit dolore magna enim. Lorem ipsum ea et esse sit kasd soluta eirmod elitr sed stet tempor sea dolor esse. Lorem et amet iriure takimata et kasd accusam no consectetuer illum ea amet hendrerit. At iriure et sea lorem soluta erat quis elitr dolor tempor eirmod nonumy erat suscipit diam tempor duo exerci. Voluptua blandit et sed duis ipsum nisl voluptua ipsum ea lorem eirmod molestie kasd. In erat consetetur lorem est no facilisis elitr. Dolor et facilisi sed sit et erat nonummy eos clita sed. Invidunt hendrerit dolor justo lorem. Nostrud clita sadipscing dolores aliquip consetetur. Dolore sanctus sadipscing duo et duo wisi gubergren lorem eirmod augue duis dolore ut lorem. Sed magna feugait et rebum est suscipit dolor ea lorem liber et aliquyam nobis volutpat. Nihil wisi duo justo ut at dolores consetetur amet. Ut ex nobis lobortis ullamcorper ad voluptua sea dolore ut elitr. Nulla sed molestie. In dolores magna congue dolore diam dolore rebum lorem sadipscing nonumy erat ea.\n",
+               "2024-09-15T20:09:13.3958006+00:00");
+        Response response=booksPage.putBook(20,updateBooks);
+      }
+@Test(priority = 4)
+public void testDeleteActivity() {
+        Response response=booksPage.deleteBook(20);
+        Assert.assertEquals(response.getStatusCode(), 200, "Expected status code is 200 for successful deletion");
+        System.out.println("DELETE Response:" + response.asString());
+    }
+@Test(priority = 5)
+public  void testGetBookUsingQP() {
+        Response response=booksPage.getBookWithQueryParams(1);
+        Assert.assertEquals(response.getStatusCode(), 200, "Expected status code is 200");
+        Assert.assertTrue(response.contentType()
+                .contains("application/json"), "Response content type should be application/json");
+        String responseBody = response.asString();
+        Assert.assertTrue(responseBody.contains("title"), "Response body should contain 'Title'");
+        System.out.println("GET with Query Params Response:" + response.asString());
+
+    }
+}
+
+
+
